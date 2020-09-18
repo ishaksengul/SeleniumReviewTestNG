@@ -5,7 +5,7 @@ import com.techproed.utilities.ConfigurationReader;
 import com.techproed.utilities.Driver;
 import org.testng.annotations.Test;
 
-public class GlbHomeGardenTest {
+public class GlbKitTest {
 
     //2. ÖRNEK : Yazldızlı Çay Bardağı
     //a ) https://www.glbtrader.com/listing/Home-Garden-Kitchen--Dining-Bar/60/67
@@ -21,7 +21,7 @@ public class GlbHomeGardenTest {
     //	ürünün açıklamasını webelement şeklinde bulun.
     //c ) Bu webelementlerin içerdiği yazıları ekrana yazdırın.
 
-    @Test
+    @Test (groups = "glbtest")
     public void homeGarden(){
 
         Driver.getDriver().get(ConfigurationReader.getProperty("home_garden"));
